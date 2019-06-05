@@ -1,0 +1,44 @@
+nop
+move v3,v4
+return-void
+const/4 v3,1
+monitor-enter v1
+check-cast v0, Lcn/woblog/markdowndiary/domain/Note;
+instance-of v0, p1, Ljava/lang/String;
+array-length v1, v2
+new-instance v1, Ljava/lang/String;
+filled-new-array {v0,v0},[I
+fill-array-data v3, :array_0
+throw v0
+goto :goto_0
+packed-switch p1,  :pswitch_data_0
+sparse-switch v0, :sswitch_data_0
+cmpl-float v0, v6, v7
+cmpg-float v0, v6, v7
+cmp-long v0, v2, v4
+if-eqz v12, :cond_0
+aget v7, v3, v6
+aput v0, v3, v5
+iget-wide v2, v0, Lcom/woblog/testsmali/InstanceObject;->aLong:J
+iput-char v1, v0, Lcom/woblog/testsmali/InstanceObject;->aChar:C
+sget v1, Lcom/woblog/testsmali/StatusObject;->aInt:I
+sput v2, Lcom/woblog/testsmali/StatusObject;->aInt:I
+invoke-virtual {p0, v0}, Lcom/woblog/testsmali/MainActivity;->setContentView(I)V
+neg-long  v2,v0
+not-long v3,v4
+int-to-long v6, v0
+long-to-double v0, v1
+float-to-int v0, v3
+double-to-long v0, v4
+add-int v0, v2, v3
+sub-int v0, v2, v3
+mul-int v0, v2, v3
+div-int v0, v2, v3
+rem-int v0, v2, v3
+and-int v0, v2, v3
+or-int v0, v2, v3
+xor-int v0, v2, v3
+shl-int v0, v2, v3
+shr-int v0, v2, v3
+ushr-long v0, v2, v3
+rsub-int/lit8 v3, v2, 0x6
