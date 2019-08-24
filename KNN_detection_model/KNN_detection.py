@@ -40,7 +40,6 @@ def main():
     np.random.shuffle(all_data)
     num_sample = len(all_data)
 
-    #todo:如果想增加时使用的样本数，请修改此处的数值，* 后面的数代表了训练用样本的比例，数越小，用于测试的样本越多
     if stage == "train":
         thr = (int)(num_sample / 10 * 9)
     if stage == "valid":
@@ -57,7 +56,7 @@ def main():
     valid_lab = valid_data[:, -1]
 
 
-    model = KNeighborsClassifier(n_neighbors=5,p=2,metric='minkowski')
+    model = KNeighborsClassifier(n_neighbors=5,p=2,metric='minkowski', algorithm=’ball_tree’ )
 
     model_path = 'model/KNN.tfl'
 
