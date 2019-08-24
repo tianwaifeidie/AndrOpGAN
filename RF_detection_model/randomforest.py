@@ -39,7 +39,7 @@ def main():
     np.random.shuffle(all_data)
     num_sample = len(all_data)
 
-    #todo:如果想增加时使用的样本数，请修改此处的数值，* 后面的数代表了训练用样本的比例，数越小，用于测试的样本越多
+    
     if stage == "train":
         thr = (int)(num_sample / 10 * 9)
     if stage == "valid":
@@ -63,7 +63,7 @@ def main():
     for idx in range(len(valid_lab)):
         valid_one_hot_label[idx][int(valid_lab[idx])] = 1
 
-    model = RandomForestClassifier()
+    model = RandomForestClassifier(n_estimators=50,  criterion='gini', bootstrap=True)
 
     model_path = 'model/RF.tfl'
 
