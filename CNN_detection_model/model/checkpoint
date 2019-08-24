@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/amax/zhangxuetao/wgan2/test_5/model/cnn2.tfl"
+all_model_checkpoint_paths: "/home/amax/zhangxuetao/wgan2/test_5/model/cnn2.tfl"
