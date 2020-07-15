@@ -10,8 +10,8 @@ def main():
     # stage = 'train'
     stage = 'valid'
     # ----load data----
-    feat_ben = np.load('/home/amax/zhangxuetao/wgan2/ben_original_feature.npy')
-    feat_mal = np.load('/home/amax/zhangxuetao/wgan2/mal_original_feature.npy')
+    feat_ben = np.load('/home/amax/***/wgan2/ben_original_feature.npy')
+    feat_mal = np.load('/home/amax/***/wgan2/mal_original_feature.npy')
     # feat_ben = feat_ben[:500,:]
     # feat_mal = feat_mal[:800,:]
 
